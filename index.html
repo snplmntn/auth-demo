@@ -5,26 +5,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Login and Signup Form</h1>
+    <div class="container-logo"><img class="logo" src="img/logo.png" alt="dos-logo"></img><h1>DOS</h1></div>
+    
+    <div class="container-all">
+      <div class="contents"><h1>SHORT DESCRIPTION</h1></div>
 
-    <!-- Signup Form -->
-    <form id="signup-form">
-      <h2>Sign up</h2>
-      <input type="text" id="signup-email" placeholder="Email" />
-      <input type="password" id="signup-password" placeholder="Password" />
-      <button type="button" id="signup-button">Sign up</button>
-      <div id="signup-error" class="error"></div>
-    </form>
+      <div class="container-signup hidden">
+        <!-- Signup Form -->
+        <form class="signup-form">
+          <h2>Sign up</h2>
+          <input type="text" id="signup-email" placeholder="Email" />
+          <input type="password" id="signup-password" placeholder="Password" />
+          <button type="button" id="signup-button">Sign up</button>
+          <div id="signup-error" class="error"></div>
+          <span
+            >Already have an account?
+            <a class="to-login-button button">Login Here.</a></span
+          >
+        </form>
+      </div>
 
-    <!-- Login Form -->
-    <form id="login-form">
-      <h2>Login</h2>
-      <input type="text" id="login-email" placeholder="Email" />
-      <input type="password" id="login-password" placeholder="Password" />
-      <button type="button" id="login-button">IDK</button>
-      <div id="login-error" class="error"></div>
-    </form>
-
-    <script type="module" src="script.js"></script>
+      <div class="container-login">
+        <!-- Login Form -->
+        <form class="login-form">
+          <h2>Login</h2>
+          <input type="text" id="login-email" placeholder="Email" />
+          <input type="password" id="login-password" placeholder="Password" />
+          <button type="button" id="login-button">Login</button>
+          <div id="login-error" class="error"></div>
+          <span
+            >No account?
+            <span class="to-signup-button button">Sign Up Here.</span></span
+          >
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="data.js"></script>
   </body>
 </html>
